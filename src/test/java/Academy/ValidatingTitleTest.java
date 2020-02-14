@@ -26,13 +26,13 @@ public void initialize() throws IOException {
 	
 	
 	@Test
-public void basePageNavigation() throws IOException {
+public void basePageTitle() throws IOException {
  //count of the arguments we send must be equal to the count of the values which we are  sending      
       
   
        LandingPage lp = new LandingPage(driver);
     //validating the nav bar using assertion
-        Assert.assertEquals(lp.Text().getText(),"FEATURED COURSES");
+        Assert.assertEquals(lp.Text().getText(),"FEATURED COURSES123");
       //System.out.println( lp.Text().getText()); 
 	
 }

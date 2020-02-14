@@ -1,10 +1,12 @@
 package Academy;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class listenersTest implements ITestListener {
+public class ListenersTest implements ITestListener {
 
 	Base bs = new Base();
 	
@@ -19,7 +21,12 @@ public class listenersTest implements ITestListener {
 
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-	bs.getScreenshot();
+	try {
+		bs.getScreenshot("basePageTitle");
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
 	}
 
 	public void onTestSkipped(ITestResult result) {

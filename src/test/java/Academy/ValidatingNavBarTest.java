@@ -8,8 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import pageObjects.LandingPage;
 import Academy.Base;
+import pageObjects.LandingPage;
 
 public class ValidatingNavBarTest extends Base{
 	public static Logger log=LogManager.getLogger(ValidatingNavBarTest.class.getName());
@@ -21,7 +21,7 @@ public void initialize() throws IOException {
    driver = initialization();
    log.debug("driver got initialized");
        driver.get(prop.getProperty("url"));
-       log.debug("navigated to url and hitting the url");
+       log.info("navigated to url and hitting the url");
 }
 	
 	

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -52,9 +53,13 @@ public class Base {
 		return driver;
 	}
 
-	public void getScreenshot() {
+	public void getScreenshot(String screenshotname) throws IOException {
 		// TODO Auto-generated method stub
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		
+	    FileUtils.copyFile(src, new File(screenshotname+".png"));
+	    
+	    System.out.println("Screen shot saved");
 
 	}
       
