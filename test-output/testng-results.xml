@@ -1,95 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43974" started-at="2020-02-13T10:23:42 EST" finished-at="2020-02-13T10:24:26 EST">
+  <suite name="Suite" duration-ms="45568" started-at="2020-02-20T05:45:48 EST" finished-at="2020-02-20T05:46:33 EST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunnerTest@11438d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Validating NavBar" duration-ms="10570" started-at="2020-02-13T10:23:42 EST" finished-at="2020-02-13T10:23:52 EST">
-      <class name="Academy.ValidatingNavBarTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Academy.ValidatingNavBarTest@192c3f1e]" name="initialize" is-config="true" duration-ms="10112" started-at="2020-02-13T10:23:42 EST" finished-at="2020-02-13T10:23:52 EST">
+    <test name="ValidatingUserLoginTest " duration-ms="45568" started-at="2020-02-20T05:45:48 EST" finished-at="2020-02-20T05:46:33 EST">
+      <class name="testRunner.TestRunnerTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.TestRunnerTest@11438d26]" name="setUpClass" is-config="true" duration-ms="310" started-at="2020-02-20T05:45:48 EST" finished-at="2020-02-20T05:45:48 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:Academy.ValidatingNavBarTest@192c3f1e]" name="basePageNavigation" duration-ms="228" started-at="2020-02-13T10:23:52 EST" finished-at="2020-02-13T10:23:52 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.ValidatingNavBarTest@192c3f1e]" name="tearDown" is-config="true" duration-ms="155" started-at="2020-02-13T10:23:52 EST" finished-at="2020-02-13T10:23:52 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Academy.ValidatingNavBarTest -->
-    </test> <!-- Validating NavBar -->
-    <test name="HomePage Test" duration-ms="24574" started-at="2020-02-13T10:23:52 EST" finished-at="2020-02-13T10:24:17 EST">
-      <class name="Academy.HomePageTest">
-        <test-method status="PASS" signature="initilalizing()[pri:0, instance:Academy.HomePageTest@6e509ffa]" name="initilalizing" is-config="true" duration-ms="2804" started-at="2020-02-13T10:23:52 EST" finished-at="2020-02-13T10:23:55 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilalizing -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePageTest@6e509ffa]" name="basePageNavigation" duration-ms="12759" started-at="2020-02-13T10:23:55 EST" data-provider="getData" finished-at="2020-02-13T10:24:08 EST">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.TestRunnerTest@11438d26]" name="feature" duration-ms="45118" started-at="2020-02-20T05:45:48 EST" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-02-20T05:46:33 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[soumya123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abcd123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricteduser]]>
+                <![CDATA[Login into Application]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePageTest@6e509ffa]" name="basePageNavigation" duration-ms="8820" started-at="2020-02-13T10:24:08 EST" data-provider="getData" finished-at="2020-02-13T10:24:17 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jay123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[efgh456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[nonrestricteduser]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.TestRunnerTest@11438d26]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2020-02-20T05:46:33 EST" finished-at="2020-02-20T05:46:33 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePageTest@6e509ffa]" name="tearDown" is-config="true" duration-ms="144" started-at="2020-02-13T10:24:17 EST" finished-at="2020-02-13T10:24:17 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Academy.HomePageTest -->
-    </test> <!-- HomePage Test -->
-    <test name="Validating Title" duration-ms="8618" started-at="2020-02-13T10:24:17 EST" finished-at="2020-02-13T10:24:26 EST">
-      <class name="Academy.ValidatingTitleTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Academy.ValidatingTitleTest@2f465398]" name="initialize" is-config="true" duration-ms="8388" started-at="2020-02-13T10:24:17 EST" finished-at="2020-02-13T10:24:25 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:Academy.ValidatingTitleTest@2f465398]" name="basePageNavigation" duration-ms="81" started-at="2020-02-13T10:24:25 EST" finished-at="2020-02-13T10:24:25 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.ValidatingTitleTest@2f465398]" name="tearDown" is-config="true" duration-ms="140" started-at="2020-02-13T10:24:25 EST" finished-at="2020-02-13T10:24:26 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Academy.ValidatingTitleTest -->
-    </test> <!-- Validating Title -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunnerTest -->
+    </test> <!-- ValidatingUserLoginTest  -->
   </suite> <!-- Suite -->
 </testng-results>

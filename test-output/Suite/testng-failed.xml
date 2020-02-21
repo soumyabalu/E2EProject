@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Validating NavBar(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Academy.ListenersTest"/>
+  </listeners>
+  <test thread-count="5" name="Validating Title Test(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.ValidatingTitleTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="validateCourseTitle"/>
+          <include name="tearDown"/>
+          <include name="basePageTitle"/>
+        </methods>
+      </class> <!-- Academy.ValidatingTitleTest -->
+    </classes>
+  </test> <!-- Validating Title Test(failed) -->
+  <test thread-count="5" name="HomePage Test(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="basePageNavigation"/>
+          <include name="initilalizing"/>
+        </methods>
+      </class> <!-- Academy.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage Test(failed) -->
+  <test thread-count="5" name="Validating NavBar Test (failed)" parallel="tests">
     <classes>
       <class name="Academy.ValidatingNavBarTest">
         <methods>
@@ -11,27 +37,5 @@
         </methods>
       </class> <!-- Academy.ValidatingNavBarTest -->
     </classes>
-  </test> <!-- Validating NavBar(failed) -->
-  <test thread-count="5" name="HomePage Test(failed)">
-    <classes>
-      <class name="Academy.HomePageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
-          <include name="initilalizing"/>
-        </methods>
-      </class> <!-- Academy.HomePageTest -->
-    </classes>
-  </test> <!-- HomePage Test(failed) -->
-  <test thread-count="5" name="Validating Title(failed)">
-    <classes>
-      <class name="Academy.ValidatingTitleTest">
-        <methods>
-          <include name="basePageNavigation"/>
-          <include name="initialize"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Academy.ValidatingTitleTest -->
-    </classes>
-  </test> <!-- Validating Title(failed) -->
+  </test> <!-- Validating NavBar Test (failed) -->
 </suite> <!-- Failed suite [Suite] -->

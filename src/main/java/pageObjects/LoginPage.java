@@ -11,13 +11,13 @@ public class LoginPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	@FindBy(xpath="//input[@id='user_email']")
+	private @FindBy(xpath="//input[@id='user_email']")
     WebElement Email;
 	
-	@FindBy(xpath="//input[@id='user_password']")
+	private @FindBy(xpath="//input[@id='user_password']")
 	WebElement Password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	private @FindBy(xpath="//input[@type='submit']")
 	WebElement Login;
 	
 	

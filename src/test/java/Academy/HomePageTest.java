@@ -28,6 +28,9 @@ public class HomePageTest extends Base {
 
 		driver.get(prop.getProperty("url"));
 		LandingPage lp = new LandingPage(driver);
+         if( lp.getpopUpsize()>0) {
+        	 lp.getpopUp().click();
+         }
 		lp.login().click();
 		LoginPage lpp = new LoginPage(driver);
 		lpp.id().sendKeys(username);
